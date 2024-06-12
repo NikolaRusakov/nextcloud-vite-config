@@ -125,12 +125,12 @@ export function createBaseConfig(options: BaseOptions = {}): UserConfigFn {
 				// Fix build in watch mode with commonjs files
 				RemoveEnsureWatchPlugin,
 				// Add vue 3 support
-				vue({
-					isProduction: !isDev,
-					style: {
-						trim: true,
-					},
-				}),
+				// vue({
+				// 	isProduction: !isDev,
+				// 	style: {
+				// 		trim: true,
+				// 	},
+				// }),
 				// Add custom plugins
 				...plugins,
 				// Remove unneeded whitespace
